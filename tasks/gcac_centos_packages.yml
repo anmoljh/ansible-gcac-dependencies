@@ -1,0 +1,21 @@
+---
+- name: Install required system packages - GCAC Specific
+  yum: name={{ item }} state={{ yum_package_state }}
+  with_items:
+    - ed
+    - mawk
+    - readline
+    - readline-devel
+    - zlib
+    - zlib-static		
+    - zlib-devel
+    - bzip2	
+    - bzip2-devel
+    - openmpi-devel
+    - libpng
+    - libpng-static
+    - libpng-devel
+    - texlive-*
+    - texinfo
+    - java-1.8.0-openjdk-devel
+  when: ((ansible_distribution_major_version == "6") or (ansible_distribution_major_version == "7"))

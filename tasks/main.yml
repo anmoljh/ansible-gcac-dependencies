@@ -1,0 +1,10 @@
+---
+# tasks file for gcac-tools-dependencies
+
+
+- include: gcac_centos_packages.yml
+  when: ((ansible_os_family == "RedHat") or (ansible_distribution == "CentOS")) 
+
+- include: gcac_ubuntu_packages.yml
+  when: ((ansible_os_family == "Debian") or (ansible_distribution == 'Ubuntu'))
+
