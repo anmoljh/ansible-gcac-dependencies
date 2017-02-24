@@ -7,9 +7,9 @@
     - readline
     - readline-devel
     - zlib
-    - zlib-static		
+    - zlib-static
     - zlib-devel
-    - bzip2	
+    - bzip2
     - bzip2-devel
     - openmpi-devel
     - libpng
