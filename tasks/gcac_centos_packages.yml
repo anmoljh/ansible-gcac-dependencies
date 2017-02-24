@@ -15,6 +15,7 @@
     - libpng
     - libpng-static
     - libpng-devel
+    - NLopt-devel
     - texlive-*
     - texinfo
     - java-1.8.0-openjdk-devel
