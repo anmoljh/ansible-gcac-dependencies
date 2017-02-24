@@ -38,3 +38,4 @@
     - libghc-zlib-dev
     - zlib1g-dev
     - zlib1g-dbg
+    - libnlopt-dev
